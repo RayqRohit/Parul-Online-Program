@@ -168,7 +168,9 @@
     padding: 40px 20px;
   }
 
-
+  .ranking-item img{
+    max-height: 130px;
+  }
 
   .cta-growth-section {
     padding-bottom: 0;

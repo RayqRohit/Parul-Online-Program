@@ -369,14 +369,14 @@
   }
 
   .logo img {
-    height: 40px;
+    height: 35px;
 }
 }
 
 /* For screens up to 768px (tablet portrait) */
 @media (max-width: 768px) {
   .logo img {
-    height: 45px;
+    height: 35px;
   }
 
   .call-btn {
@@ -473,7 +473,7 @@
 
 
   .logo img {
-    height: 35px;
+    height: 30px;
 }
 }
 

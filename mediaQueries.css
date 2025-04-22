@@ -1,0 +1,361 @@
+@media (max-width: 1200px) {
+  .hero-content .subheading {
+    font-size: 34px;
+  }
+
+  .hero-content .admission-alert {
+    font-size: 26px;
+  }
+
+  .hero-content .main-heading {
+    font-size: 36px;
+  }
+
+
+
+}
+
+
+
+@media (max-width: 991px) {
+
+
+
+
+  .hero-section {
+    padding: 0 30px;
+    height: auto;
+    margin-top: 60px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    margin: auto;
+  }
+
+  .hero-content .subheading {
+    font-size: 30px;
+  }
+
+  .hero-content .admission-alert {
+    font-size: 22px;
+    padding: 8px 18px;
+  }
+
+  .hero-content .main-heading {
+    font-size: 30px;
+  }
+
+  .scroll-down-indicator {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+
+
+  .hero-content .subheading {
+    font-size: 26px;
+  }
+
+  .hero-content .admission-alert {
+    font-size: 20px;
+    padding: 6px 16px;
+  }
+
+  .hero-content .main-heading {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .know-more-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  /* ranking  */
+
+  .ranking-item {
+    padding: 0 15px;
+    border-right: 0;
+    border-bottom: 2px dashed #ccc;
+    text-align: center;
+
+    padding-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 438px) {
+
+
+  .hero-section {
+    padding: 0 20px;
+    padding-top: 20px;
+    height: 65vh;
+    text-align: left;
+  }
+
+  .hero-content .subheading {
+    font-size: 25px;
+  }
+
+  .hero-content .admission-alert {
+    font-size: 18px;
+    padding: 14px 28px;
+  }
+
+  .hero-content .main-heading {
+    font-size: 22px;
+  }
+
+  .know-more-btn {
+    font-size: 19px;
+    padding: 10px 18px;
+  }
+
+
+  /* ranking  */
+
+  .ranking-item {
+    padding: 0 15px;
+    border-right: 0;
+    border-bottom: 2px dashed #ccc;
+    text-align: center;
+
+    padding-bottom: 20px;
+  }
+
+
+  .programs-section {
+    padding: 40px 20px 20px 20px;
+  }
+
+  .program-category span {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .program-image {
+    width: 100%;
+  }
+
+
+  .lms-overlay {
+    padding: 40px 20px;
+  }
+
+
+  .opportunity-column {
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    border-right: 0;
+  }
+
+
+  .opportunities-header h2 {
+    font-size: 28px;
+  }
+
+
+  .cta-growth-section {
+    padding: 40px 20px;
+  }
+
+  .apply-now-cta-btn {
+    width: 42%;
+    margin: auto;
+  }
+
+  .cta-growth-section {
+    padding-bottom: 0;
+  }
+
+  .alumni-section {
+    padding: 40px 20px;
+  }
+
+  .alumni-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+}
+
+
+/* for navbar */
+
+
+/* For screens up to 1200px */
+@media (max-width: 1200px) {
+  .navbar-container {
+      padding: 0 20px;
+  }
+  
+  .nav-links ul {
+      gap: 20px;
+  }
+  
+  .call-btn {
+      padding: 8px 15px;
+      font-size: 14px;
+  }
+}
+
+/* For screens up to 991px (tablet landscape) */
+@media (max-width: 991px) {
+  .navbar {
+      padding: 15px 20px;
+  }
+  
+  .nav-links {
+      display: none; /* Hide desktop nav */
+  }
+  
+  /* Add hamburger menu button */
+  .mobile-menu-btn {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #111;
+  }
+  
+  /* Mobile menu styles */
+  .mobile-menu {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: #ffeeee;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      display: none;
+  }
+  
+  .mobile-menu.active {
+      display: block;
+  }
+  
+  .mobile-menu ul {
+      list-style: none;
+      padding: 0;
+  }
+  
+  .mobile-menu li {
+      margin-bottom: 15px;
+  }
+  
+  .mobile-menu a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+      font-size: 18px;
+  }
+  
+  /* Show mobile menu button */
+  .mobile-menu-btn {
+      display: block;
+  }
+}
+
+/* For screens up to 768px (tablet portrait) */
+@media (max-width: 768px) {
+  .logo img {
+      height: 45px;
+  }
+  
+  .call-btn {
+      padding: 8px 12px;
+      font-size: 13px;
+  }
+}
+
+/* For screens up to 438px (mobile) */
+@media (max-width: 438px) {
+  .navbar {
+    padding: 17px 20px;
+}
+  
+  .logo img {
+      height: 40px;
+  }
+  
+  .call-btn {
+      display: none; /* Hide call button on smallest screens */
+  }
+  
+  /* Add a smaller call icon instead */
+  .call-icon {
+      display: block;
+      color: #e53935;
+      font-size: 20px;
+  }
+
+
+  
+}
+
+
+@media (max-width: 991px) {
+  /* Hide desktop nav */
+  .nav-links {
+      display: none;
+  }
+  
+  /* Show hamburger menu */
+  .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 30px;
+      height: 24px;
+      cursor: pointer;
+      z-index: 1000;
+  }
+  
+  .hamburger span {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: #111;
+      transition: all 0.3s ease;
+  }
+  
+  /* Show mobile menu when checkbox is checked */
+  .menu-toggle:checked ~ .nav-links {
+      display: block;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background: #ffeeee;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+  
+  .menu-toggle:checked ~ .nav-links ul {
+      flex-direction: column;
+      gap: 15px;
+  }
+  
+  /* Hamburger animation when menu is open */
+  .menu-toggle:checked + .hamburger span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menu-toggle:checked + .hamburger span:nth-child(2) {
+      opacity: 0;
+  }
+  
+  .menu-toggle:checked + .hamburger span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+}

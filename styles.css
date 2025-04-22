@@ -94,6 +94,7 @@ body {
     left: 0;
 }
 
+/* 
 .dropdown-content {
     display: none;
     position: absolute;
@@ -115,7 +116,7 @@ body {
 
 .dropdown-content li a {
     color: #333;
-}
+} */
 
 .call-btn {
     background-color: #e53935;
@@ -165,8 +166,66 @@ body {
 }
 
 
-.menu-toggle, .hamburger {
+.menu-toggle,
+.hamburger {
     display: none;
+}
+
+/* Dropdown Container */
+.navbar-dropdown {
+    position: relative;
+}
+
+/* Initially hide dropdown */
+.navbar-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 10px 0;
+    z-index: 1000;
+    min-width: 220px;
+}
+
+/* Dropdown items */
+.navbar-dropdown-content li {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+.navbar-dropdown-content li a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-dropdown-content {
+    display: none !important;
+}
+
+.navbar-dropdown-content.show {
+    display: block !important;
+}
+
+
+.navbar-dropdown-content li {
+    padding: 10px 20px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.navbar-dropdown-content li:hover {
+    background-color: #e53935;
+    /* Red on hover */
+}
+
+.navbar-dropdown-content li:hover a {
+    color: #fff;
+    /* Optional: text becomes white for contrast */
 }
 
 /* hero section */

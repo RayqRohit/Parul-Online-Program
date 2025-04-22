@@ -263,6 +263,98 @@
   .mobile-menu-btn {
       display: block;
   }
+
+
+
+  /* new code  */
+
+  .nav-links {
+    display: none;
+}
+
+/* Show hamburger menu */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #111;
+    transition: all 0.3s ease;
+}
+
+/* Show mobile menu when checkbox is checked */
+.menu-toggle:checked ~ .nav-links {
+    display: block;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #ffeeee;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.menu-toggle:checked ~ .nav-links ul {
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.menu-toggle:checked ~ .nav-links ul li {
+    width: 100%;
+}
+
+/* Hamburger animation when menu is open */
+.menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Style dropdown in mobile menu */
+.navbar-dropdown-content {
+    position: static;
+    box-shadow: none;
+    background: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    min-width: 100%;
+}
+
+.navbar-dropdown-content li {
+    padding: 8px 15px;
+}
+
+.navbar-dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.nav-links ul {
+  align-items: flex-start;
+  justify-content: flex-start; /* ✅ Also update this just in case */
+}
 }
 
 /* For screens up to 768px (tablet portrait) */
@@ -362,4 +454,27 @@
   .enroll-section{
     padding: 40px 20px;
   }
+}
+
+
+.navbar-dropdown-toggle {
+  background: none;
+  border: none;
+  font: inherit;
+  color: #111;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  /* display: inline-block; */
+  position: relative;
+}
+
+.navbar-dropdown-toggle:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #111;
+  bottom: -5px;
+  left: 0;
 }

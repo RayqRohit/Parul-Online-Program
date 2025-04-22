@@ -168,10 +168,7 @@
     padding: 40px 20px;
   }
 
-  .apply-now-cta-btn {
-    width: 42%;
-    margin: auto;
-  }
+
 
   .cta-growth-section {
     padding-bottom: 0;
@@ -195,7 +192,7 @@
 /* For screens up to 1200px */
 @media (max-width: 1200px) {
   .navbar-container {
-      padding: 0 20px;
+      padding: 0 10px;
   }
   
   .nav-links ul {
@@ -281,7 +278,7 @@
 /* For screens up to 438px (mobile) */
 @media (max-width: 438px) {
   .navbar {
-    padding: 17px 20px;
+    padding: 17px 10px;
 }
   
   .logo img {
@@ -357,5 +354,10 @@
   
   .menu-toggle:checked + .hamburger span:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+  .enroll-section{
+    padding: 40px 20px;
   }
 }

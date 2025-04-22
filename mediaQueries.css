@@ -168,7 +168,7 @@
     padding: 40px 20px;
   }
 
-  .ranking-item img{
+  .ranking-item img {
     max-height: 130px;
   }
 
@@ -194,74 +194,75 @@
 /* For screens up to 1200px */
 @media (max-width: 1200px) {
   .navbar-container {
-      padding: 0 10px;
+    padding: 0 10px;
   }
-  
+
   .nav-links ul {
-      gap: 20px;
+    gap: 20px;
   }
-  
+
   .call-btn {
-      padding: 8px 15px;
-      font-size: 14px;
+    padding: 8px 15px;
+    font-size: 14px;
   }
 }
 
 /* For screens up to 991px (tablet landscape) */
 @media (max-width: 991px) {
   .navbar {
-      padding: 15px 20px;
+    padding: 15px 20px;
   }
-  
+
   .nav-links {
-      display: none; /* Hide desktop nav */
+    display: none;
+    /* Hide desktop nav */
   }
-  
+
   /* Add hamburger menu button */
   .mobile-menu-btn {
-      display: block;
-      background: none;
-      border: none;
-      font-size: 24px;
-      cursor: pointer;
-      color: #111;
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #111;
   }
-  
+
   /* Mobile menu styles */
   .mobile-menu {
-      position: fixed;
-      top: 80px;
-      left: 0;
-      width: 100%;
-      background-color: #ffeeee;
-      padding: 20px;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-      display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #ffeeee;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: none;
   }
-  
+
   .mobile-menu.active {
-      display: block;
+    display: block;
   }
-  
+
   .mobile-menu ul {
-      list-style: none;
-      padding: 0;
+    list-style: none;
+    padding: 0;
   }
-  
+
   .mobile-menu li {
-      margin-bottom: 15px;
+    margin-bottom: 15px;
   }
-  
+
   .mobile-menu a {
-      text-decoration: none;
-      color: #111;
-      font-weight: 600;
-      font-size: 18px;
+    text-decoration: none;
+    color: #111;
+    font-weight: 600;
+    font-size: 18px;
   }
-  
+
   /* Show mobile menu button */
   .mobile-menu-btn {
-      display: block;
+    display: block;
   }
 
 
@@ -270,10 +271,10 @@
 
   .nav-links {
     display: none;
-}
+  }
 
-/* Show hamburger menu */
-.hamburger {
+  /* Show hamburger menu */
+  .hamburger {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -281,18 +282,18 @@
     height: 24px;
     cursor: pointer;
     z-index: 1000;
-}
+  }
 
-.hamburger span {
+  .hamburger span {
     display: block;
     width: 100%;
     height: 3px;
     background: #111;
     transition: all 0.3s ease;
-}
+  }
 
-/* Show mobile menu when checkbox is checked */
-.menu-toggle:checked ~ .nav-links {
+  /* Show mobile menu when checkbox is checked */
+  .menu-toggle:checked~.nav-links {
     display: block;
     position: fixed;
     top: 80px;
@@ -302,34 +303,34 @@
     padding: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     z-index: 999;
-}
+  }
 
-.menu-toggle:checked ~ .nav-links ul {
-  flex-direction: column;
-  gap: 15px;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
+  .menu-toggle:checked~.nav-links ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 
-.menu-toggle:checked ~ .nav-links ul li {
+  .menu-toggle:checked~.nav-links ul li {
     width: 100%;
-}
+  }
 
-/* Hamburger animation when menu is open */
-.menu-toggle:checked + .hamburger span:nth-child(1) {
+  /* Hamburger animation when menu is open */
+  .menu-toggle:checked+.hamburger span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
-}
+  }
 
-.menu-toggle:checked + .hamburger span:nth-child(2) {
+  .menu-toggle:checked+.hamburger span:nth-child(2) {
     opacity: 0;
-}
+  }
 
-.menu-toggle:checked + .hamburger span:nth-child(3) {
+  .menu-toggle:checked+.hamburger span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-}
+  }
 
-/* Style dropdown in mobile menu */
-.navbar-dropdown-content {
+  /* Style dropdown in mobile menu */
+  .navbar-dropdown-content {
     position: static;
     box-shadow: none;
     background: #fff;
@@ -337,35 +338,36 @@
     padding: 10px;
     margin-top: 10px;
     min-width: 100%;
-}
+  }
 
-.navbar-dropdown-content li {
+  .navbar-dropdown-content li {
     padding: 8px 15px;
-}
+  }
 
-.navbar-dropdown-toggle {
+  .navbar-dropdown-toggle {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     padding: 10px 0;
-}
+  }
 
-.nav-links ul {
-  align-items: flex-start;
-  justify-content: flex-start; /* ✅ Also update this just in case */
-}
+  .nav-links ul {
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* ✅ Also update this just in case */
+  }
 }
 
 /* For screens up to 768px (tablet portrait) */
 @media (max-width: 768px) {
   .logo img {
-      height: 45px;
+    height: 45px;
   }
-  
+
   .call-btn {
-      padding: 8px 12px;
-      font-size: 13px;
+    padding: 8px 12px;
+    font-size: 13px;
   }
 }
 
@@ -373,85 +375,87 @@
 @media (max-width: 438px) {
   .navbar {
     padding: 17px 10px;
-}
-  
+  }
+
   .logo img {
-      height: 40px;
+    height: 40px;
   }
-  
+
   .call-btn {
-      display: none; /* Hide call button on smallest screens */
+    display: none;
+    /* Hide call button on smallest screens */
   }
-  
+
   /* Add a smaller call icon instead */
   .call-icon {
-      display: block;
-      color: #e53935;
-      font-size: 20px;
+    display: block;
+    color: #e53935;
+    font-size: 20px;
   }
 
 
-  
+
 }
 
 
 @media (max-width: 991px) {
+
   /* Hide desktop nav */
   .nav-links {
-      display: none;
+    display: none;
   }
-  
+
   /* Show hamburger menu */
   .hamburger {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      width: 30px;
-      height: 24px;
-      cursor: pointer;
-      z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 1000;
   }
-  
+
   .hamburger span {
-      display: block;
-      width: 100%;
-      height: 3px;
-      background: #111;
-      transition: all 0.3s ease;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #111;
+    transition: all 0.3s ease;
   }
-  
+
   /* Show mobile menu when checkbox is checked */
-  .menu-toggle:checked ~ .nav-links {
-      display: block;
-      position: absolute;
-      top: 80px;
-      left: 0;
-      width: 100%;
-      background: #ffeeee;
-      padding: 20px;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  .menu-toggle:checked~.nav-links {
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #ffeeee;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   }
-  
-  .menu-toggle:checked ~ .nav-links ul {
-      flex-direction: column;
-      gap: 15px;
+
+  .menu-toggle:checked~.nav-links ul {
+    flex-direction: column;
+    gap: 15px;
   }
-  
+
   /* Hamburger animation when menu is open */
-  .menu-toggle:checked + .hamburger span:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
+  .menu-toggle:checked+.hamburger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
   }
-  
-  .menu-toggle:checked + .hamburger span:nth-child(2) {
-      opacity: 0;
+
+  .menu-toggle:checked+.hamburger span:nth-child(2) {
+    opacity: 0;
   }
-  
-  .menu-toggle:checked + .hamburger span:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
+
+  .menu-toggle:checked+.hamburger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
 
-  .enroll-section{
+  .enroll-section {
     padding: 40px 20px;
   }
 }
